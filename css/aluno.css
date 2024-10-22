@@ -1,0 +1,28 @@
+.imgConta img {
+    width: 50px;
+    border-radius: 55px;
+}
+
+.conteudo {
+    
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.calendario {
+   margin: auto;
+}
+
+.calendario tr {
+    text-align: center;
+}
+
+.estrela {
+    height: 30px;
+}
+
+.estrela {
+    margin-right: 8px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    vertical-align: middle; /* Alinha a imagem com o texto */
+}

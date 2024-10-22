@@ -1,0 +1,49 @@
+.page{
+    display: flex;
+    margin-top: 40px;
+}
+
+.areaLogin{
+    width: 25%;
+    height: 80%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: auto;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.dados input{
+    width: 98%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.recSenha{
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+
+.btnEntrar{
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#acesso, #cadastro{
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+#cadastro{
+    background-color:  rgba(0, 0, 255, 0.503);
+}
