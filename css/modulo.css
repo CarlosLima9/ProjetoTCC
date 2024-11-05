@@ -1,0 +1,78 @@
+/* Estilo para a classe 'modulo' */
+.modulo {
+    border: 2px solid #4CAF50; /* Cor da borda */
+    padding: 10px;             /* Espaçamento interno */
+    margin-bottom: 15px;       /* Espaçamento entre os módulos */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    display: flex;             /* Flexbox para alinhar imagem e conteúdo */
+    height: 250px;             /* Altura fixa para o módulo, pode ajustar conforme necessário */
+}
+ 
+/* Estilo adicional para o h3 dentro de 'modulo' */
+.modulo h3 {
+    font-size: 18px;           /* Tamanho de fonte do título */
+    font-weight: bold;         /* Negrito para o título */
+    color: #333;               /* Cor do texto */
+    margin-bottom: 10px;       /* Margem abaixo do título */
+}
+ 
+/* Estilo para o container da imagem */
+.imagem-container {
+    flex: 0 0 150px;           /* Faz com que a imagem ocupe 150px de largura */
+    height: 100%;              /* A imagem ocupará toda a altura do bloco */
+    margin-right: 20px;        /* Espaço entre a imagem e o conteúdo */
+    background-color: #ddd;    /* Cor de fundo para a imagem (caso não haja imagem) */
+}
+ 
+/* Estilo para as imagens dentro de 'imagem-container' */
+.imagem-container img {
+    width: 100%;               /* A imagem ocupará toda a largura do container */
+    height: 100%;              /* A imagem ocupará toda a altura do container */
+    object-fit: cover;         /* Faz com que a imagem preencha o container sem distorcer */
+    border-radius: 8px;        /* Bordas arredondadas nas imagens */
+}
+ 
+/* Estilo para o conteúdo à direita (h3, lista e botão) */
+.conteudo-direita {
+    display: flex;             /* Flexbox para organizar os itens em uma coluna */
+    flex-direction: column;    /* Itens empilhados verticalmente */
+    justify-content: space-between; /* Espaço entre os itens */
+    flex: 1;                   /* Faz com que o conteúdo ocupe o restante do espaço */
+}
+ 
+/* Estilo para as listas dentro de 'modulo' */
+.modulo ul {
+    list-style-type: disc;     /* Estilo das listas */
+    padding-left: 20px;        /* Espaçamento para a lista */
+}
+ 
+/* Estilo para os itens da lista */
+.modulo li {
+    margin-bottom: 5px;        /* Espaçamento entre os itens da lista */
+}
+ 
+/* Estilo para o 'Iniciar' (botão) */
+.modulo p {
+    font-size: 14px;           /* Tamanho da fonte reduzido */
+    font-weight: bold;         /* Negrito */
+    color: #fff;               /* Texto branco */
+    background-color: #4CAF50; /* Fundo verde */
+    padding: 8px 15px;         /* Reduzir o espaçamento interno para o botão ficar menor */
+    border-radius: 5px;        /* Bordas arredondadas */
+    display: inline-block;     /* Faz com que o botão ocupe apenas o espaço necessário */
+    text-align: center;        /* Centraliza o texto dentro do botão */
+    cursor: pointer;          /* Cursor em forma de mão para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    margin-top: 10px;          /* Espaço entre o botão e o conteúdo anterior */
+    width: 70px;               /* A largura do botão será ajustada automaticamente ao conteúdo */
+}
+ 
+/* Efeito ao passar o mouse (hover) sobre o botão */
+.modulo p:hover {
+    background-color: #45a049; /* Cor mais escura quando o mouse passar sobre o botão */
+}
+ 
+/* Estilo opcional para quando o botão é pressionado */
+.modulo p:active {
+    background-color: #388e3c; /* Cor ainda mais escura quando pressionado */
+}
