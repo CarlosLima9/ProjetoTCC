@@ -2,20 +2,6 @@
     color: #ccc;
 }
 
-.login {
-    width: 150px;
-    height: 30px;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: rgba(0, 0, 255, 0.503);
-}
-
-.login:focus {
-    outline: none;
-    box-shadow: 0 0 10px #ccc;
-}
 
 @media (max-width: 768px) {
 .cabecalho {
@@ -92,12 +78,3 @@
     max-width: 600px;
     margin: auto;
 }
-/*
-.info{
-    border: 1px solid black;
-    width: 70%;
-    padding: 10px;
-    margin: auto;
-    border-radius: 15px;
-    text-align: justify;
-}*/

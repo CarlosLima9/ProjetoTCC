@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.header h1 img {
+    margin-right: 10px;
+}
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.submit-btn {
+    background-color: #000000;
+    color: white;
+    width: 93px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+.submit-btn:hover {
+    background-color: #333333;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.question {
+    width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin: 10px 0;
+    display: none;
+}
+.question.active {
+    display: block;
+}
+.options label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.options input[type="radio"] {
+    margin-right: 8px;
+}
+.pagination {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    margin: 15px 0;
+}
+.pagination button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.pagination button.active {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+#relogio_timer{
+    max-width: 28px;
+    height: auto; /* mantém a proporção */
+    float: left;
+margin-right: 10px;
+}

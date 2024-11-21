@@ -1,0 +1,42 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+}
+
+.conteudo, .aprofundamento {
+    display: flex;
+    padding: 30px;
+}
+
+.video, .ebook {
+    width: 50%;
+}
+
+.texto{
+    width: 40%;
+   text-align: justify;
+   margin: auto;
+}
+
+.quiz {
+    width: 40%;
+    text-align: center;
+}
+
+button {
+   background-color: #000000;
+   color: white;
+   width: 93px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   display: inline-block;
+   text-decoration: none;
+
+}
