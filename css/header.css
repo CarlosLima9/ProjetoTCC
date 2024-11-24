@@ -5,8 +5,9 @@
     align-items: center;
     justify-content: space-between;
     opacity: 0.8;
-    width: 100%; /* Faz o menu ocupar toda a largura da tela */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar destaque */
+    width: 100%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
 }
 
 .login {
