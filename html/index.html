@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/carrossel.css">
 </head>
 <body>
     <nav class="header">
@@ -54,20 +55,28 @@
                 <p>A plataforma Prepareduc oferece a oportunidade de adquirir conhecimentos e habilidades essenciais, proporcionando aos alunos as ferramentas necessárias para transformar seu futuro acadêmico e profissional. Com uma abordagem simples e abrangente, queremos que todos tenham acesso aos melhores conteúdos e recursos para alcançar seus objetivos, seja no Enem, vestibulares ou concursos.</p>
             </div>
 
-            
-            <div class="cards">
-                <div class="card1">
-                    <img src="../img/videoaula.webp" alt="">
-                    <p>Vídeo Aulas: Aprenda de forma dinâmica com vídeos explicativos de diversos temas.</p>
+            <div class="carrossel">    
+                <div class="container-nav">
+                  
+                  <input type="radio" name="botao" id="nav1">
+                  <input type="radio" name="botao" id="nav2">
+                  <input type="radio" name="botao" id="nav3">
+                  <input type="radio" name="botao" id="nav4">
+
+                  <div class="ensino1">
+                      <a href="fundamentalI.html"><img src="../img/fundamentalI.png" id="pic1"></a>
+                  </div>
+                  <a href="fundamentalII.html"><img src="../img/fundamentalII.webp" id="pic3"></a>
+                  <a href="medio.html"><img src="../img/medio.jpg" id="pic4"></a>
+                  <a href="vestibular.html"><img src="../img/vestibular.jpg" id="pic4"></a>
                 </div>
-                <div class="card2">
-                    <img src="../img/ebook.webp" alt="">
-                    <p>E-Books: Acesse materiais de leitura completos e atualizados sobre diferentes áreas do conhecimento.</p>
-                </div>
-                <div class="card3">
-                    <img src="../img/quiz.jpeg" alt="">
-                    <p>Quizzes: Teste seus conhecimentos com quizzes interativos que ajudam a reforçar seu aprendizado.</p>
-                </div>
+            </div>
+          
+            <div class="navegacao">
+              <label for="nav1" class="navegar"></label>
+              <label for="nav2" class="navegar"></label>
+              <label for="nav3" class="navegar"></label>
+              <label for="nav4" class="navegar"></label>
             </div>
 
         </div>

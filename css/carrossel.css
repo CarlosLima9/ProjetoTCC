@@ -1,0 +1,172 @@
+.banner1 {
+    background: url('../img/ifanestud.jpg') no-repeat center center/cover;
+    color: dimgray;
+    text-shadow: 1px 1px 1px gray;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+}
+
+.banner2 {
+    background: url('../img/fundamental2.jpg') no-repeat center center/cover;
+    color: dimgray;
+    text-shadow: 1px 1px 1px gray;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+}
+
+/* Estilo para o container de cada ano */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Títulos de cada ano */
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+/* Cards de matérias */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cards div {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cards p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+/* Carrossel de matérias */
+.carrossel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.materias-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para ajustar em telas menores */
+    gap: 20px; /* Espaço entre os itens */
+    margin-top: 20px;
+}
+
+.materia {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px; /* Largura de cada item */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.materia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilos de Hover e Transições */
+.ensino:hover {
+    color: #0077cc;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.materia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-info h1 {
+        font-size: 30px;
+    }
+
+    .banner-info p {
+        font-size: 16px;
+    }
+
+    .materias-container {
+        flex-direction: column; /* Alinha os itens na coluna em telas pequenas */
+        gap: 20px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .materia {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+}

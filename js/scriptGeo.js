@@ -1,3 +1,3 @@
 document.getElementById("quiz").addEventListener('click', () => {
-    window.location.href = 'Quiz_Mat.html';
+    window.location.href = 'Quiz_Geo.html';
 })

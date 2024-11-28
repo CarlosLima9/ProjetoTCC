@@ -76,3 +76,8 @@
 .modulo p:active {
     background-color: #388e3c; /* Cor ainda mais escura quando pressionado */
 }
+
+#estrela, #estrela1 {
+    width: 30px;
+    padding-left: 75%;
+}
