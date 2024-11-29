@@ -18,6 +18,16 @@
     border-radius: 5px;
 }
 
+.banner3 {
+    background: url('../img/ensinoMedio.jpg') no-repeat center center/cover;
+    color: dimgray;
+    text-shadow: 1px 1px 1px gray;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+}
+
 /* Estilo para o container de cada ano */
 .container {
     width: 80%;
