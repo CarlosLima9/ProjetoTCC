@@ -5,7 +5,6 @@
     margin-top: 50px;
     box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1); 
     border-radius: 5px;
-    overflow: hidden;
 }
     
 .imgConta img {
@@ -20,23 +19,16 @@
 }
 
 .calendario {
-    width: 100%; /* Ajuste a largura para 100% do contêiner disponível */
-    max-width: 300px; /* Limita a largura máxima do calendário */
-    padding: 10px;
+    width: 300px; /* Largura fixa para o calendário */
+    padding: 20px;
     border-radius: 8px;
-    box-sizing: border-box; /* Inclui o padding nas dimensões do elemento */
-    overflow: hidden; /* Impede que qualquer parte do conteúdo ultrapasse a borda */
 }
 table {
+    width: 100%;
     border-collapse: collapse;
-    
 }
 
-.semana {
-    background-color: rgba(0, 0, 255, 0.503);
-}
-
-table tr {
+table thead {
     font-weight: bold;
     background-color: #f2f2f2;
     text-align: center;
@@ -55,7 +47,7 @@ table td:hover {
 
 .acessoRecente {
     width: 60%; /* Ajusta a largura da seção */
-    
+    margin: 0 auto; /* Centraliza a seção dentro do contêiner */
 }
 
 .acessoRecente h3 {
@@ -84,28 +76,4 @@ table td:hover {
 .estrela {
     margin-right: 8px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
     vertical-align: middle; /* Alinha a imagem com o texto */
-}
-
-.cookiesFav {
-    background-color: whitesmoke;
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%);
-    border: solid black;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 20px;
-    display: none;
-}
-
-.cookiesFav.mostrar {
-    display: block;
-}
-
-.cookiesFav button {
-    border-radius: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    cursor: pointer;
 }
