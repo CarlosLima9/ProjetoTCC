@@ -13,6 +13,7 @@
         <div class="button-container">
             <div class="timer"><img src="../img/relogio_timer.png" alt="" id="relogio_timer">10:00</div>
             <button class="submit-btn" onclick="startQuiz()">Começar</button>
+            <button class="submit-btn" onclick="finishQuiz()">Finalizar</button>
             <div class="avatar">
                 <span>Usuario<br>Aluno</span>
                 <img src="../img/usuario.jpg" alt="Avatar">
@@ -25,101 +26,101 @@
         <div class="question" id="question1">
             <h2>Questão 1</h2>
             <p>O Brasil faz fronteira com todos os países da América do Sul, exceto:</p>
-            <label><input type="radio" name="question1" value="A"> A) Colômbia</label></br>
-            <label><input type="radio" name="question1" value="B"> B) Chile</label></br>
-            <label><input type="radio" name="question1" value="C"> C) Equador</label></br>
-            <label><input type="radio" name="question1" value="D"> D) Venezuela</label></br>
-            <label><input type="radio" name="question1" value="E"> E) Paraguai</label></br>
-        </div>
+            <label><input type="radio" name="question1" id="errada" value="A"> A) Colômbia</label></br>
+            <label><input type="radio" name="question1" id="correta" value="B"> B) Chile</label></br>
+            <label><input type="radio" name="question1" id="errada" value="C"> C) Equador</label></br>
+            <label><input type="radio" name="question1" id="errada" value="D"> D) Venezuela</label></br>
+            <label><input type="radio" name="question1" id="errada" value="E"> E) Paraguai</label></br>
+        </div>id="correta"
 
         <div class="question" id="question2">
             <h2>Questão 2</h2>
             <p>Qual é a maior bacia hidrográfica do Brasil, reconhecida como a maior do mundo em volume de água?</p>
-            <label><input type="radio" name="question2" value="A"> A) Bacia do Tocantins</label></br>
-            <label><input type="radio" name="question2" value="B"> B) Bacia Platina</label></br>
-            <label><input type="radio" name="question2" value="C"> C) Bacia do Paraná</label></br>
-            <label><input type="radio" name="question2" value="D"> D) Bacia Amazônica</label></br>
-            <label><input type="radio" name="question2" value="E"> E) Bacia do São Francisco</label></br>
+            <label><input type="radio" name="question2" id="errada" value="A"> A) Bacia do Tocantins</label></br>
+            <label><input type="radio" name="question2" id="errada" value="B"> B) Bacia Platina</label></br>
+            <label><input type="radio" name="question2" id="errada" value="C"> C) Bacia do Paraná</label></br>
+            <label><input type="radio" name="question2" id="correta" value="D"> D) Bacia Amazônica</label></br>
+            <label><input type="radio" name="question2" id="errada" value="E"> E) Bacia do São Francisco</label></br>
         </div>
 
         <div class="question" id="question3">
             <h2>Questão 3</h2>
             <p>Qual região brasileira é conhecida pela presença do bioma Cerrado?</p>
-            <label><input type="radio" name="question3" value="A"> A) Norte</label></br>
-            <label><input type="radio" name="question3" value="B"> B) Nordeste</label></br>
-            <label><input type="radio" name="question3" value="C"> C) Centro-Oeste</label></br>
-            <label><input type="radio" name="question3" value="D"> D) Sudeste</label></br>
-            <label><input type="radio" name="question3" value="E"> E) Sul</label></br>
+            <label><input type="radio" name="question3" id="errada" value="A"> A) Norte</label></br>
+            <label><input type="radio" name="question3" id="errada" value="B"> B) Nordeste</label></br>
+            <label><input type="radio" name="question3" id="correta" value="C"> C) Centro-Oeste</label></br>
+            <label><input type="radio" name="question3" id="errada" value="D"> D) Sudeste</label></br>
+            <label><input type="radio" name="question3" id="errada" value="E"> E) Sul</label></br>
         </div>
 
          <div class="question" id="question4">
             <h2>Questão 4</h2>
             <p>Qual é a principal característica cultural do Brasil?</p>
-            <label><input type="radio" name="question4" value="A"> A) Monocultura.</label></br>
-            <label><input type="radio" name="question4" value="B"> B) Diversidade étnica e cultural.</label></br>
-            <label><input type="radio" name="question4" value="C"> C) Unidade linguística.</label></br>
-            <label><input type="radio" name="question4" value="D"> D) Economia agrícola.</label></br>
-            <label><input type="radio" name="question4" value="E"> E) Sistema educacional homogêneo.</label></br>   
+            <label><input type="radio" name="question4" id="errada" value="A"> A) Monocultura.</label></br>
+            <label><input type="radio" name="question4" id="correta" value="B"> B) Diversidade étnica e cultural.</label></br>
+            <label><input type="radio" name="question4" id="errada" value="C"> C) Unidade linguística.</label></br>
+            <label><input type="radio" name="question4" id="errada" value="D"> D) Economia agrícola.</label></br>
+            <label><input type="radio" name="question4" id="errada" value="E"> E) Sistema educacional homogêneo.</label></br>   
         </div>
 
         <div class="question" id="question5">
             <h2>Questão 5</h2>
             <p>Qual é a principal fonte de energia renovável utilizada no Brasil?</p>
-            <label><input type="radio" name="question5" value="A"> A) Energia solar</label></br>
-            <label><input type="radio" name="question5" value="B"> B) Energia eólica</label></br>
-            <label><input type="radio" name="question5" value="C"> C) Energia hidrelétrica</label></br>
-            <label><input type="radio" name="question5" value="D"> D) Biomassa</label></br>
-            <label><input type="radio" name="question5" value="E"> E) Energia geotérmica.</label></br>
+            <label><input type="radio" name="question5" id="errada" value="A"> A) Energia solar</label></br>
+            <label><input type="radio" name="question5" id="errada" value="B"> B) Energia eólica</label></br>
+            <label><input type="radio" name="question5" id="correta" value="C"> C) Energia hidrelétrica</label></br>
+            <label><input type="radio" name="question5" id="errada" value="D"> D) Biomassa</label></br>
+            <label><input type="radio" name="question5" id="errada" value="E"> E) Energia geotérmica.</label></br>
         </div>
 
         <div class="question" id="question6">
             <h2>Questão 6</h2>
             <p>Qual dessas cidades é a capital do estado do Amazonas?</p>
-            <label><input type="radio" name="question6" value="A"> A) Porto Alegre.</label></br>
-            <label><input type="radio" name="question6" value="B"> B) Belém.</label></br>
-            <label><input type="radio" name="question6" value="C"> C) Manaus</label></br>
-            <label><input type="radio" name="question6" value="D"> D) Boa Vista</label></br>
-            <label><input type="radio" name="question6" value="E"> E) São Luís</label></br>
+            <label><input type="radio" name="question6" id="errada" value="A"> A) Porto Alegre.</label></br>
+            <label><input type="radio" name="question6" id="errada" value="B"> B) Belém.</label></br>
+            <label><input type="radio" name="question6" id="correta" value="C"> C) Manaus</label></br>
+            <label><input type="radio" name="question6" id="errada" value="D"> D) Boa Vista</label></br>
+            <label><input type="radio" name="question6" id="errada" value="E"> E) São Luís</label></br>
         </div>
 
         <div class="question" id="question7">
             <h2>Questão 7</h2>
             <p>A Região Sul do Brasil é composta pelos estados: Paraná, Santa Catarina e:</p>
-            <label><input type="radio" name="question7" value="A"> A) São Paulo</label></br>
-            <label><input type="radio" name="question7" value="B"> B) Mato Grosso</label></br>
-            <label><input type="radio" name="question7" value="C"> C) Mato Grosso do Sul</label></br>
-            <label><input type="radio" name="question7" value="D"> D) Rio Grande do Sul</label></br>
-            <label><input type="radio" name="question7" value="E"> E) Goiás</label></br>
+            <label><input type="radio" name="question7" id="errada" value="A"> A) São Paulo</label></br>
+            <label><input type="radio" name="question7" id="errada" value="B"> B) Mato Grosso</label></br>
+            <label><input type="radio" name="question7" id="errada" value="C"> C) Mato Grosso do Sul</label></br>
+            <label><input type="radio" name="question7" id="correta" value="D"> D) Rio Grande do Sul</label></br>
+            <label><input type="radio" name="question7" id="errada" value="E"> E) Goiás</label></br>
         </div>
 
         <div class="question" id="question8">
             <h2>Questão 8</h2>
             <p>Qual é o principal produto exportado pelo Brasil no setor agrícola?</p>
-            <label><input type="radio" name="question8" value="A"> A) Algodão</label></br>
-            <label><input type="radio" name="question8" value="B"> B) Café</label></br>
-            <label><input type="radio" name="question8" value="C"> C) Soja</label></br>
-            <label><input type="radio" name="question8" value="D"> D) Cana-de-açúcar</label></br>
-            <label><input type="radio" name="question8" value="E"> E) Milho</label></br>
+            <label><input type="radio" name="question8" id="errada" value="A"> A) Algodão</label></br>
+            <label><input type="radio" name="question8" id="errada" value="B"> B) Café</label></br>
+            <label><input type="radio" name="question8" id="correta" value="C"> C) Soja</label></br>
+            <label><input type="radio" name="question8" id="errada" value="D"> D) Cana-de-açúcar</label></br>
+            <label><input type="radio" name="question8" id="errada" value="E"> E) Milho</label></br>
         </div>
 
         <div class="question" id="question9">
             <h2>Questão 9</h2>
             <p>A festa popular conhecida como Círio de Nazaré ocorre em qual estado brasileiro?</p>
-            <label><input type="radio" name="question9" value="A"> A) Bahia</label></br>
-            <label><input type="radio" name="question9" value="B"> B) Pará</label></br>
-            <label><input type="radio" name="question9" value="C"> C) Pernambuco</label></br>
-            <label><input type="radio" name="question9" value="D"> D) Maranhão</label></br>
-            <label><input type="radio" name="question9" value="E"> E) Ceará.</label></br>
+            <label><input type="radio" name="question9" id="errada" value="A"> A) Bahia</label></br>
+            <label><input type="radio" name="question9" id="correta" value="B"> B) Pará</label></br>
+            <label><input type="radio" name="question9" id="errada" value="C"> C) Pernambuco</label></br>
+            <label><input type="radio" name="question9" id="errada" value="D"> D) Maranhão</label></br>
+            <label><input type="radio" name="question9" id="errada" value="E"> E) Ceará.</label></br>
         </div>
 
         <div class="question" id="question10">
             <h2>Questão 10</h2>
             <p>Qual é a principal atividade econômica da região Sudeste do Brasil?</p>
-            <label><input type="radio" name="question10" value="A"> A) Agricultura.</label></br>
-            <label><input type="radio" name="question10" value="B"> B) Pecuária.</label></br>
-            <label><input type="radio" name="question10" value="C"> C) Indústria.</label></br>
-            <label><input type="radio" name="question10" value="D"> D) Pesca.</label></br>
-            <label><input type="radio" name="question10" value="E"> E) Turismo.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="A"> A) Agricultura.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="B"> B) Pecuária.</label></br>
+            <label><input type="radio" name="question10" id="correta" value="C"> C) Indústria.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="D"> D) Pesca.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="E"> E) Turismo.</label></br>
             </div>
         </div>
 

@@ -13,7 +13,10 @@
     font-size: 18px;           /* Tamanho de fonte do título */
     font-weight: bold;         /* Negrito para o título */
     color: #333;               /* Cor do texto */
-    margin-bottom: 10px;       /* Margem abaixo do título */
+    margin-bottom: 10px;  
+    display: flex;             /* Flexbox para alinhar o título e a estrela na mesma linha */
+    justify-content: space-between; /* Espaço entre o título e a estrela */
+    align-items: center;        /* Margem abaixo do título */
 }
  
 /* Estilo para o container da imagem */
@@ -79,5 +82,6 @@
 
 #estrela, #estrela1 {
     width: 30px;
-    padding-left: 75%;
+    height: 30px;
+    margin-right: 10px;
 }

@@ -13,6 +13,7 @@
         <div class="button-container">
             <div class="timer"><img src="../img/relogio_timer.png" alt="" id="relogio_timer">10:00</div>
             <button class="submit-btn" onclick="startQuiz()">Começar</button>
+            <button class="submit-btn" onclick="finishQuiz()">Finalizar</button>
             <div class="avatar">
                 <span>Usuario<br>Aluno</span>
                 <img src="../img/usuario.jpg" alt="Avatar">
@@ -25,101 +26,101 @@
         <div class="question" id="question1">
             <h2>Questão 1</h2>
             <p>O que são fontes de energia renováveis?</p>
-            <label><input type="radio" name="question1" value="A"> A) Fontes de energia que nunca se acabam</label></br>
-            <label><input type="radio" name="question1" value="B"> B) Fontes de energia que dependem de combustíveis fósseis</label></br>
-            <label><input type="radio" name="question1" value="C"> C) Fontes de energia que se esgotam rapidamente</label></br>
-            <label><input type="radio" name="question1" value="D"> D) Fontes de energia que não poluem o meio ambiente</label></br>
-            <label><input type="radio" name="question1" value="E"> E) Fontes de energia que podem ser renovadas ou recarregadas naturalmente</label></br>
+            <label><input type="radio" name="question1" id="errada" value="A"> A) Fontes de energia que nunca se acabam</label></br>
+            <label><input type="radio" name="question1" id="errada" value="B"> B) Fontes de energia que dependem de combustíveis fósseis</label></br>
+            <label><input type="radio" name="question1" id="errada" value="C"> C) Fontes de energia que se esgotam rapidamente</label></br>
+            <label><input type="radio" name="question1" id="errada" value="D"> D) Fontes de energia que não poluem o meio ambiente</label></br>
+            <label><input type="radio" name="question1" id="correta" value="E"> E) Fontes de energia que podem ser renovadas ou recarregadas naturalmente</label></br>
         </div>
 
         <div class="question" id="question2">
             <h2>Questão 2</h2>
             <p>Qual das opções abaixo é uma fonte de energia não renovável?</p>
-            <label><input type="radio" name="question2" value="A"> A) Energia solar</label></br>
-            <label><input type="radio" name="question2" value="B"> B) Energia eólica</label></br>
-            <label><input type="radio" name="question2" value="C"> C) Energia hídrica</label></br>
-            <label><input type="radio" name="question2" value="D"> D) Energia nuclear</label></br>
-            <label><input type="radio" name="question2" value="E"> E) Petróleo</label></br>
+            <label><input type="radio" name="question2" id="errada" value="A"> A) Energia solar</label></br>
+            <label><input type="radio" name="question2" id="errada" value="B"> B) Energia eólica</label></br>
+            <label><input type="radio" name="question2" id="errada" value="C"> C) Energia hídrica</label></br>
+            <label><input type="radio" name="question2" id="errada" value="D"> D) Energia nuclear</label></br>
+            <label><input type="radio" name="question2" id="correta" value="E"> E) Petróleo</label></br>
         </div>
 
         <div class="question" id="question3">
             <h2>Questão 3</h2>
             <p>Como a energia hidrelétrica é gerada?</p>
-            <label><input type="radio" name="question3" value="A"> A) Usando o calor do sol para aquecer a água</label></br>
-            <label><input type="radio" name="question3" value="B"> B) Aproveitando o movimento do vento</label></br>
-            <label><input type="radio" name="question3" value="C"> C) Usando a força das ondas do mar</label></br>
-            <label><input type="radio" name="question3" value="D"> D) Aproveitando a força da água em represas para gerar eletricidade</label></br>
-            <label><input type="radio" name="question3" value="E"> E) Usando o movimento das turbinas eólicas</label></br>
+            <label><input type="radio" name="question3" id="errada" value="A"> A) Usando o calor do sol para aquecer a água</label></br>
+            <label><input type="radio" name="question3" id="errada" value="B"> B) Aproveitando o movimento do vento</label></br>
+            <label><input type="radio" name="question3" id="errada" value="C"> C) Usando a força das ondas do mar</label></br>
+            <label><input type="radio" name="question3" id="correta" value="D"> D) Aproveitando a força da água em represas para gerar eletricidade</label></br>
+            <label><input type="radio" name="question3" id="errada" value="E"> E) Usando o movimento das turbinas eólicas</label></br>
         </div>
 
          <div class="question" id="question4">
             <h2>Questão 4</h2>
             <p>Quais são as principais fontes de energia renováveis?</p>
-            <label><input type="radio" name="question4" value="A"> A) Petróleo e carvão</label></br>
-            <label><input type="radio" name="question4" value="B"> B) Energia solar, eólica e hídrica</label></br>
-            <label><input type="radio" name="question4" value="C"> C) Energia nuclear e gás natural</label></br>
-            <label><input type="radio" name="question4" value="D"> D) Energia térmica e biomassa</label></br>
-            <label><input type="radio" name="question4" value="E"> E) Energia fóssil e carvão</label></br>   
+            <label><input type="radio" name="question4" id="errada" value="A"> A) Petróleo e carvão</label></br>
+            <label><input type="radio" name="question4" id="correta" value="B"> B) Energia solar, eólica e hídrica</label></br>
+            <label><input type="radio" name="question4" id="errada" value="C"> C) Energia nuclear e gás natural</label></br>
+            <label><input type="radio" name="question4" id="errada" value="D"> D) Energia térmica e biomassa</label></br>
+            <label><input type="radio" name="question4" id="errada" value="E"> E) Energia fóssil e carvão</label></br>   
         </div>
 
         <div class="question" id="question5">
             <h2>Questão 5</h2>
             <p>Qual é a principal vantagem da energia eólica?</p>
-            <label><input type="radio" name="question5" value="A"> A) Ela é barata de ser extraída e não polui o meio ambiente</label></br>
-            <label><input type="radio" name="question5" value="B"> B) Ela pode ser gerada o tempo todo, independentemente do clima</label></br>
-            <label><input type="radio" name="question5" value="C"> C) Ela depende do vento para ser gerada e não gera resíduos</label></br>
-            <label><input type="radio" name="question5" value="D"> D) Ela usa a energia do sol para gerar eletricidade</label></br>
-            <label><input type="radio" name="question5" value="E"> E) Ela é a forma de energia mais eficiente para todos os países</label></br>
+            <label><input type="radio" name="question5" id="errada" value="A"> A) Ela é barata de ser extraída e não polui o meio ambiente</label></br>
+            <label><input type="radio" name="question5" id="errada" value="B"> B) Ela pode ser gerada o tempo todo, independentemente do clima</label></br>
+            <label><input type="radio" name="question5" id="correta" value="C"> C) Ela depende do vento para ser gerada e não gera resíduos</label></br>
+            <label><input type="radio" name="question5" id="errada" value="D"> D) Ela usa a energia do sol para gerar eletricidade</label></br>
+            <label><input type="radio" name="question5" id="errada" value="E"> E) Ela é a forma de energia mais eficiente para todos os países</label></br>
         </div>
 
         <div class="question" id="question6">
             <h2>Questão 6</h2>
             <p>A energia solar é considerada uma fonte de energia renovável porque</p>
-            <label><input type="radio" name="question6" value="A"> A) O sol nunca se acaba e sua energia pode ser utilizada por muitos anos</label></br>
-            <label><input type="radio" name="question6" value="B"> B) A luz solar pode ser convertida em energia elétrica sem nenhum custo</label></br>
-            <label><input type="radio" name="question6" value="C"> C) O sol gera eletricidade sem causar nenhum impacto ambiental</label></br>
-            <label><input type="radio" name="question6" value="D"> D) O sol é uma fonte de energia barata e infinita</label></br>
-            <label><input type="radio" name="question6" value="E"> E) O sol é uma fonte de energia barata e muito poluente</label></br>
+            <label><input type="radio" name="question6" id="correta" value="A"> A) O sol nunca se acaba e sua energia pode ser utilizada por muitos anos</label></br>
+            <label><input type="radio" name="question6" id="errada" value="B"> B) A luz solar pode ser convertida em energia elétrica sem nenhum custo</label></br>
+            <label><input type="radio" name="question6" id="errada" value="C"> C) O sol gera eletricidade sem causar nenhum impacto ambiental</label></br>
+            <label><input type="radio" name="question6" id="errada" value="D"> D) O sol é uma fonte de energia barata e infinita</label></br>
+            <label><input type="radio" name="question6" id="errada" value="E"> E) O sol é uma fonte de energia barata e muito poluente</label></br>
         </div>
 
         <div class="question" id="question7">
             <h2>Questão 7</h2>
             <p>Qual é a principal preocupação em relação ao uso de energia nuclear?</p>
-            <label><input type="radio" name="question7" value="A"> A) O custo de construção das usinas nucleares</label></br>
-            <label><input type="radio" name="question7" value="B"> B) O risco de acidentes graves e o gerenciamento de resíduos radioativos</label></br>
-            <label><input type="radio" name="question7" value="C"> C) A dificuldade de encontrar urânio para as usinas</label></br>
-            <label><input type="radio" name="question7" value="D"> D) A falta de eficiência na geração de eletricidade</label></br>
-            <label><input type="radio" name="question7" value="E"> E) O grande uso de petróleo para sua geração</label></br>
+            <label><input type="radio" name="question7" id="errada" value="A"> A) O custo de construção das usinas nucleares</label></br>
+            <label><input type="radio" name="question7" id="correta" value="B"> B) O risco de acidentes graves e o gerenciamento de resíduos radioativos</label></br>
+            <label><input type="radio" name="question7" id="errada" value="C"> C) A dificuldade de encontrar urânio para as usinas</label></br>
+            <label><input type="radio" name="question7" id="errada" value="D"> D) A falta de eficiência na geração de eletricidade</label></br>
+            <label><input type="radio" name="question7" id="errada" value="E"> E) O grande uso de petróleo para sua geração</label></br>
         </div>
 
         <div class="question" id="question8">
             <h2>Questão 8</h2>
             <p>Quais são os principais combustíveis fósseis utilizados para gerar energia?</p>
-            <label><input type="radio" name="question8" value="A"> A) Gás natural, carvão e petróleo</label></br>
-            <label><input type="radio" name="question8" value="B"> B) Energia solar, eólica e hídrica</label></br>
-            <label><input type="radio" name="question8" value="C"> C) Urânio e plutônio</label></br>
-            <label><input type="radio" name="question8" value="D"> D) Biomassa e vento</label></br>
-            <label><input type="radio" name="question8" value="E"> E) Água e gás natural</label></br>
+            <label><input type="radio" name="question8" id="correta" value="A"> A) Gás natural, carvão e petróleo</label></br>
+            <label><input type="radio" name="question8" id="errada" value="B"> B) Energia solar, eólica e hídrica</label></br>
+            <label><input type="radio" name="question8" id="errada" value="C"> C) Urânio e plutônio</label></br>
+            <label><input type="radio" name="question8" id="errada" value="D"> D) Biomassa e vento</label></br>
+            <label><input type="radio" name="question8" id="errada" value="E"> E) Água e gás natural</label></br>
         </div>
 
         <div class="question" id="question9">
             <h2>Questão 9</h2>
             <p>Por que a energia solar não pode ser gerada durante a noite?</p>
-            <label><input type="radio" name="question9" value="A"> A) Porque não há sol à noite, e a energia depende da luz solar</label></br>
-            <label><input type="radio" name="question9" value="B"> B) Porque o vento não sopra durante a noite</label></br>
-            <label><input type="radio" name="question9" value="C"> C) Porque o calor do sol é muito baixo durante a noite</label></br>
-            <label><input type="radio" name="question9" value="D"> D) Porque as usinas solares precisam de sol para aquecer a água</label></br>
-            <label><input type="radio" name="question9" value="E"> E) Porque o processo de fotossíntese não ocorre à noite.</label></br>
+            <label><input type="radio" name="question9" id="correta" value="A"> A) Porque não há sol à noite, e a energia depende da luz solar</label></br>
+            <label><input type="radio" name="question9" id="errada" value="B"> B) Porque o vento não sopra durante a noite</label></br>
+            <label><input type="radio" name="question9" id="errada" value="C"> C) Porque o calor do sol é muito baixo durante a noite</label></br>
+            <label><input type="radio" name="question9" id="errada" value="D"> D) Porque as usinas solares precisam de sol para aquecer a água</label></br>
+            <label><input type="radio" name="question9" id="errada" value="E"> E) Porque o processo de fotossíntese não ocorre à noite.</label></br>
         </div>
 
         <div class="question" id="question10">
             <h2>Questão 10</h2>
             <p>O que é uma das principais desvantagens da energia fóssil?</p>
-            <label><input type="radio" name="question10" value="A"> A) Ela é infinita e não causa poluição.</label></br>
-            <label><input type="radio" name="question10" value="B"> B) Ela causa danos ao meio ambiente e contribui para as mudanças climáticas.</label></br>
-            <label><input type="radio" name="question10" value="C"> C) Ela é muito cara para ser utilizada em larga escala.</label></br>
-            <label><input type="radio" name="question10" value="D"> D) Ela não pode ser utilizada em usinas para gerar eletricidade.</label></br>
-            <label><input type="radio" name="question10" value="E"> E) Ela não tem impacto nas comunidades que vivem perto de minas de carvão.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="A"> A) Ela é infinita e não causa poluição.</label></br>
+            <label><input type="radio" name="question10" id="correta" value="B"> B) Ela causa danos ao meio ambiente e contribui para as mudanças climáticas.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="C"> C) Ela é muito cara para ser utilizada em larga escala.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="D"> D) Ela não pode ser utilizada em usinas para gerar eletricidade.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="E"> E) Ela não tem impacto nas comunidades que vivem perto de minas de carvão.</label></br>
             </div>
         </div>
 

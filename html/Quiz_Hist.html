@@ -13,6 +13,7 @@
         <div class="button-container">
             <div class="timer"><img src="../img/relogio_timer.png" alt="" id="relogio_timer">10:00</div>
             <button class="submit-btn" onclick="startQuiz()">Começar</button>
+            <button class="submit-btn" onclick="finishQuiz()">Finalizar</button>
             <div class="avatar">
                 <span>Usuario<br>Aluno</span>
                 <img src="../img/usuario.jpg" alt="Avatar">
@@ -25,101 +26,101 @@
         <div class="question" id="question1">
             <h2>Questão 1</h2>
             <p>Qual foi a principal motivação para o início da colonização do Brasil pelos portugueses?</p>
-            <label><input type="radio" name="question1" value="A"> A) Expandir o cristianismo.</label></br>
-            <label><input type="radio" name="question1" value="B"> B) Explorar ouro e pedras preciosas.</label></br>
-            <label><input type="radio" name="question1" value="C"> C) Cultivar açúcar para exportação.</label></br>
-            <label><input type="radio" name="question1" value="D"> D) Estabelecer um refúgio para perseguidos políticos.</label></br>
-            <label><input type="radio" name="question1" value="E"> E) Rivalizar com a colonização espanhola na América.</label></br>
+            <label><input type="radio" name="question1" id="errada" value="A"> A) Expandir o cristianismo.</label></br>
+            <label><input type="radio" name="question1" id="errada" value="B"> B) Explorar ouro e pedras preciosas.</label></br>
+            <label><input type="radio" name="question1" id="correta" value="C"> C) Cultivar açúcar para exportação.</label></br>
+            <label><input type="radio" name="question1" id="errada" value="D"> D) Estabelecer um refúgio para perseguidos políticos.</label></br>
+            <label><input type="radio" name="question1" id="errada" value="E"> E) Rivalizar com a colonização espanhola na América.</label></br>
         </div>
 
         <div class="question" id="question2">
             <h2>Questão 2</h2>
             <p>Como era organizada a sociedade colonial brasileira?</p>
-            <label><input type="radio" name="question2" value="A"> A) Igualitária, sem classes definidas.</label></br>
-            <label><input type="radio" name="question2" value="B"> B) Estruturada em uma rígida hierarquia social, com escravizados na base.</label></br>
-            <label><input type="radio" name="question2" value="C"> C) Dominada pelas populações indígenas.</label></br>
-            <label><input type="radio" name="question2" value="D"> D) Sem distinções entre colonos e africanos escravizados.</label></br>
-            <label><input type="radio" name="question2" value="E"> E) Baseada na meritocracia.</label></br>
+            <label><input type="radio" name="question2" id="errada" value="A"> A) Igualitária, sem classes definidas.</label></br>
+            <label><input type="radio" name="question2" id="correta" value="B"> B) Estruturada em uma rígida hierarquia social, com escravizados na base.</label></br>
+            <label><input type="radio" name="question2" id="errada" value="C"> C) Dominada pelas populações indígenas.</label></br>
+            <label><input type="radio" name="question2" id="errada" value="D"> D) Sem distinções entre colonos e africanos escravizados.</label></br>
+            <label><input type="radio" name="question2" id="errada" value="E"> E) Baseada na meritocracia.</label></br>
         </div>
 
         <div class="question" id="question3">
             <h2>Questão 3</h2>
             <p>Por que os portugueses passaram a escravizar os povos indígenas no início da colonização?</p>
-            <label><input type="radio" name="question3" value="A"> A) Para integrar os indígenas à cultura europeia.</label></br>
-            <label><input type="radio" name="question3" value="B"> B) Para substituir os trabalhadores escravizados africanos.</label></br>
-            <label><input type="radio" name="question3" value="C"> C) Porque os indígenas eram considerados aptos para trabalhos agrícolas.</label></br>
-            <label><input type="radio" name="question3" value="D"> D) Para cumprir ordens da Igreja Católica.</label></br>
-            <label><input type="radio" name="question3" value="E"> E) Porque a população portuguesa era insuficiente para o trabalho.</label></br>
+            <label><input type="radio" name="question3" id="errada" value="A"> A) Para integrar os indígenas à cultura europeia.</label></br>
+            <label><input type="radio" name="question3" id="correta" value="B"> B) Para substituir os trabalhadores escravizados africanos.</label></br>
+            <label><input type="radio" name="question3" id="errada" value="C"> C) Porque os indígenas eram considerados aptos para trabalhos agrícolas.</label></br>
+            <label><input type="radio" name="question3" id="errada" value="D"> D) Para cumprir ordens da Igreja Católica.</label></br>
+            <label><input type="radio" name="question3" id="errada" value="E"> E) Porque a população portuguesa era insuficiente para o trabalho.</label></br>
         </div>
 
          <div class="question" id="question4">
             <h2>Questão 4</h2>
             <p>Qual foi o principal motivo para o tráfico de africanos escravizados ao Brasil?</p>
-            <label><input type="radio" name="question4" value="A"> A) A aliança econômica entre Portugal e países africanos..</label></br>
-            <label><input type="radio" name="question4" value="B"> B) A resistência indígena ao trabalho forçado e a alta mortalidade por doenças.</label></br>
-            <label><input type="radio" name="question4" value="C"> C) A abundância de africanos dispostos a migrar voluntariamente.</label></br>
-            <label><input type="radio" name="question4" value="D"> D) A necessidade de ensinar novas tecnologias aos colonos portugueses.</label></br>
-            <label><input type="radio" name="question4" value="E"> E) O desejo de expandir a cultura africana no Brasil.</label></br>   
+            <label><input type="radio" name="question4" id="errada" value="A"> A) A aliança econômica entre Portugal e países africanos..</label></br>
+            <label><input type="radio" name="question4" id="correta" value="B"> B) A resistência indígena ao trabalho forçado e a alta mortalidade por doenças.</label></br>
+            <label><input type="radio" name="question4" id="errada" value="C"> C) A abundância de africanos dispostos a migrar voluntariamente.</label></br>
+            <label><input type="radio" name="question4" id="errada" value="D"> D) A necessidade de ensinar novas tecnologias aos colonos portugueses.</label></br>
+            <label><input type="radio" name="question4" id="errada" value="E"> E) O desejo de expandir a cultura africana no Brasil.</label></br>   
         </div>
 
         <div class="question" id="question5">
             <h2>Questão 5</h2>
             <p>O que eram os quilombos no contexto da colonização do Brasil?</p>
-            <label><input type="radio" name="question5" value="A"> A) Fortalezas construídas para defender o litoral.</label></br>
-            <label><input type="radio" name="question5" value="B"> B) Comunidades de africanos escravizados fugidos e outros marginalizados.</label></br>
-            <label><input type="radio" name="question5" value="C"> C) Áreas agrícolas destinadas exclusivamente à produção de açúcar.</label></br>
-            <label><input type="radio" name="question5" value="D"> D) Locais de catequese promovidos pela Igreja Católica.</label></br>
-            <label><input type="radio" name="question5" value="E"> E) Vilas criadas para os trabalhadores livres da colônia.</label></br>
+            <label><input type="radio" name="question5" id="errada" value="A"> A) Fortalezas construídas para defender o litoral.</label></br>
+            <label><input type="radio" name="question5" id="correta" value="B"> B) Comunidades de africanos escravizados fugidos e outros marginalizados.</label></br>
+            <label><input type="radio" name="question5" id="errada" value="C"> C) Áreas agrícolas destinadas exclusivamente à produção de açúcar.</label></br>
+            <label><input type="radio" name="question5" id="errada" value="D"> D) Locais de catequese promovidos pela Igreja Católica.</label></br>
+            <label><input type="radio" name="question5" id="errada" value="E"> E) Vilas criadas para os trabalhadores livres da colônia.</label></br>
         </div>
 
         <div class="question" id="question6">
             <h2>Questão 6</h2>
             <p>Qual foi a principal atividade econômica da economia colonial brasileira no século XVI?</p>
-            <label><input type="radio" name="question6" value="A"> A) Exploração de ouro.</label></br>
-            <label><input type="radio" name="question6" value="B"> B) Produção de açúcar.</label></br>
-            <label><input type="radio" name="question6" value="C"> C) Cultivo de café.</label></br>
-            <label><input type="radio" name="question6" value="D"> D) Comércio de especiarias.</label></br>
-            <label><input type="radio" name="question6" value="E"> E) Indústria têxtil.</label></br>
+            <label><input type="radio" name="question6" id="errada" value="A"> A) Exploração de ouro.</label></br>
+            <label><input type="radio" name="question6" id="correta" value="B"> B) Produção de açúcar.</label></br>
+            <label><input type="radio" name="question6" id="errada" value="C"> C) Cultivo de café.</label></br>
+            <label><input type="radio" name="question6" id="errada" value="D"> D) Comércio de especiarias.</label></br>
+            <label><input type="radio" name="question6" id="errada" value="E"> E) Indústria têxtil.</label></br>
         </div>
 
         <div class="question" id="question7">
             <h2>Questão 7</h2>
             <p>Em qual região do Brasil ocorreram as principais descobertas de ouro no século XVIII?</p>
-            <label><input type="radio" name="question7" value="A"> A) Nordeste.</label></br>
-            <label><input type="radio" name="question7" value="B"> B) Norte.</label></br>
-            <label><input type="radio" name="question7" value="C"> C) Centro-Oeste.</label></br>
-            <label><input type="radio" name="question7" value="D"> D) Sudeste.</label></br>
-            <label><input type="radio" name="question7" value="E"> E) Sul.</label></br>
+            <label><input type="radio" name="question7" id="errada" value="A"> A) Nordeste.</label></br>
+            <label><input type="radio" name="question7" id="errada" value="B"> B) Norte.</label></br>
+            <label><input type="radio" name="question7" id="errada" value="C"> C) Centro-Oeste.</label></br>
+            <label><input type="radio" name="question7" id="errada" value="D"> D) Sudeste.</label></br>
+            <label><input type="radio" name="question7" id="correta" value="E"> E) Sul.</label></br>
         </div>
 
         <div class="question" id="question8">
             <h2>Questão 8</h2>
             <p>Quais eram as condições enfrentadas pelos africanos escravizados durante o transporte no tráfico transatlântico?</p>
-            <label><input type="radio" name="question8" value="A"> A) Confortáveis, com garantias de alimentação adequada.</label></br>
-            <label><input type="radio" name="question8" value="B"> B) Precárias, com superlotação e altas taxas de mortalidade.</label></br>
-            <label><input type="radio" name="question8" value="C"> C) Seguras, devido à preocupação econômica dos traficantes.</label></br>
-            <label><input type="radio" name="question8" value="D"> D) Similares às dos colonos europeus.</label></br>
-            <label><input type="radio" name="question8" value="E"> E) Voluntárias, com liberdade para retorno à África.</label></br>
+            <label><input type="radio" name="question8" id="errada" value="A"> A) Confortáveis, com garantias de alimentação adequada.</label></br>
+            <label><input type="radio" name="question8" id="correta" value="B"> B) Precárias, com superlotação e altas taxas de mortalidade.</label></br>
+            <label><input type="radio" name="question8" id="errada" value="C"> C) Seguras, devido à preocupação econômica dos traficantes.</label></br>
+            <label><input type="radio" name="question8" id="errada" value="D"> D) Similares às dos colonos europeus.</label></br>
+            <label><input type="radio" name="question8" id="errada" value="E"> E) Voluntárias, com liberdade para retorno à África.</label></br>
         </div>
 
         <div class="question" id="question9">
             <h2>Questão 9</h2>
             <p>Qual foi uma forma significativa de resistência dos povos escravizados no Brasil?</p>
-            <label><input type="radio" name="question9" value="A"> A) Aliança com os colonos portugueses.</label></br>
-            <label><input type="radio" name="question9" value="B"> B) Criação de quilombos e participação em revoltas.</label></br>
-            <label><input type="radio" name="question9" value="C"> C) Negociação de melhores condições de trabalho.</label></br>
-            <label><input type="radio" name="question9" value="D"> D) Envio de petições ao rei de Portugal.</label></br>
-            <label><input type="radio" name="question9" value="E"> E) Migração para outras colônias</label></br>
+            <label><input type="radio" name="question9" id="errada" value="A"> A) Aliança com os colonos portugueses.</label></br>
+            <label><input type="radio" name="question9" id="correta" value="B"> B) Criação de quilombos e participação em revoltas.</label></br>
+            <label><input type="radio" name="question9" id="errada" value="C"> C) Negociação de melhores condições de trabalho.</label></br>
+            <label><input type="radio" name="question9" id="errada" value="D"> D) Envio de petições ao rei de Portugal.</label></br>
+            <label><input type="radio" name="question9" id="errada" value="E"> E) Migração para outras colônias</label></br>
         </div>
 
         <div class="question" id="question10">
             <h2>Questão 10</h2>
             <p>Como o sistema de exploração mineral no Brasil impactou a economia colonial?</p>
-            <label><input type="radio" name="question10" value="A"> A) Desestimulou a exportação de açúcar.</label></br>
-            <label><input type="radio" name="question10" value="B"> B) Enriquecia apenas os mineradores locais.</label></br>
-            <label><input type="radio" name="question10" value="C"> C) Gerou uma concentração de riqueza nas mãos da Coroa Portuguesa.</label></br>
-            <label><input type="radio" name="question10" value="D"> D) Tornou o Brasil autossuficiente economicamente.</label></br>
-            <label><input type="radio" name="question10" value="E"> E) Eliminou o uso de mão de obra escravizada.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="A"> A) Desestimulou a exportação de açúcar.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="B"> B) Enriquecia apenas os mineradores locais.</label></br>
+            <label><input type="radio" name="question10" id="correta" value="C"> C) Gerou uma concentração de riqueza nas mãos da Coroa Portuguesa.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="D"> D) Tornou o Brasil autossuficiente economicamente.</label></br>
+            <label><input type="radio" name="question10" id="errada" value="E"> E) Eliminou o uso de mão de obra escravizada.</label></br>
             </div>
         </div>
 
