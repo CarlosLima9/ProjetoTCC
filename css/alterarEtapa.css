@@ -1,0 +1,37 @@
+#listaOpcoes {
+    position: absolute;
+    top: 70px; /* Abaixo do cabeçalho */
+    left: 850px; /* Margem à esquerda */
+    background-color: white; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000;
+    width: 250px; /* Largura da lista */
+    display: none; /* Inicialmente oculto */
+}
+
+#listaOpcoes ul {
+    list-style-type: none; /* Remove marcadores */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+#listaOpcoes li {
+    padding: 12px 15px; /* Espaçamento interno */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+#listaOpcoes li:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
+#listaOpcoes a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #333; /* Cor do texto */
+    display: block; /* Faz o link ocupar toda a área do li */
+}
+
+#listaOpcoes a:hover {
+    color: #4CAF50; /* Cor do texto ao passar o mouse */
+}

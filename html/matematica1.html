@@ -8,20 +8,30 @@
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/modulo.css">
+    <link rel="stylesheet" href="../css/alterarEtapa.css">
 </head>
 <body>
     <nav class="header">
         <a href="index.html" class="ensino"><img src="../img/logo100X300.png" alt="" class="logo"></a>
-        <div class="escolaridade">
+        <div class="escolaridade" id="escolaridade">
           <a href="infantil.html" class="ensino">1º Ano</a>
           <a href="fundamentalI.html" class="ensino">2º Ano</a>
           <a href="fundamentalII.html" class="ensino">3º Ano</a>
           <a href="medio.html" class="ensino">4º Ano</a>
           <a href="complementar.html" class="ensino">5º Ano</a>
-          <a href="ambienteAluno.html" class="ensino">Alterar Etapa</a>
+          <a href="*" class="ensino" id="alterarEtapa">Alterar Etapa</a>
         </div>
         <button class="login" id="login">Login</button>
     </nav>
+
+    <div id="listaOpcoes">
+        <ul>
+            <li><a href="fundamentalI.html">Ensino Fundamental I</a></li>
+            <li><a href="fundamentalII.html">Ensino Fundamental II</a></li>
+            <li><a href="medio.html">Ensino Médio</a></li>
+            <li><a href="vestibular.html">Vestibular</a></li>
+        </ul>
+    </div>
  
     <h1>Matématica</h1>
     <p>Ensino Fundamental I</p>
@@ -73,4 +83,5 @@
  </body>
  <script src="../js/scriptIndex.js"></script>
  <script src="../js/scriptFav.js"></script>
+ <script src="../js/scriptAlterarEtapa.js"></script>
 </html>
