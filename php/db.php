@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'plataforma';
 $username = 'root';
-$password = 'HORTETEC_115';
+$password = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
