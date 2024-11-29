@@ -1,9 +1,10 @@
 <?php
 session_start();
-include '../php/db.php';
 
 // Verifica se o formulário de login foi enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    include '../php/db.php';  // Inclui o banco de dados apenas quando necessário
+
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 

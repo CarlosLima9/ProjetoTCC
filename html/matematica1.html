@@ -19,10 +19,21 @@
           <a href="fundamentalII.html" class="ensino">3º Ano</a>
           <a href="medio.html" class="ensino">4º Ano</a>
           <a href="complementar.html" class="ensino">5º Ano</a>
+          <a href="*" class="ensino" id="alterarMateria">Alterar Matéria</a>
           <a href="*" class="ensino" id="alterarEtapa">Alterar Etapa</a>
         </div>
         <button class="login" id="login">Login</button>
     </nav>
+
+    <div id="listaMaterias">
+        <ul>
+            <li><a href="ciencias1.html">Ciências</a></li>
+            <li><a href="geografia1.html">Geografia</a></li>
+            <li><a href="historia1.html">História</a></li>
+            <li><a href="portugues1.html">Português</a></li>
+            <li><a href="matematica1.html">Matemática</a></li>
+        </ul>
+    </div>
 
     <div id="listaOpcoes">
         <ul>
@@ -65,7 +76,7 @@
     <div class="conteudo-direita">    
     <h3>
         Noções e Conceitos 
-        <img src="../img/estrela_apagada.png" alt="" id="estrela1">
+        <img src="../img/estrela_apagada.png" alt="" id="estrela" class="estrela" data-link="matematica1.html">
     </h3> 
     <ul>
         <li>Numeros </li>
@@ -78,8 +89,26 @@
     </div>
  
     
+    <div class="modulo">
+        <div class="imagem-container">
+            <img src="../img/geometria.jpg" alt="Imagem de exemplo 3">
+        </div>
+        <div class="conteudo-direita">    
+            <h3>
+                Figuras Geométricas e Medidas
+                <img src="../img/estrela_apagada.png" alt="" id="estrela" class="estrela" data-link="matematica1.html">
+            </h3> 
+            <ul>
+                <li>Formas geométricas planas (quadrado, círculo, triângulo)</li>
+                <li>Noções de comprimento (maior e menor)</li>
+                <li>Comparação de tamanhos e distâncias</li>
+            </ul>
+    
+            <a href="../html/ConteudoGeografia.html" class="button"><p>Iniciar</p></a>
+        </div>
     </div>
-    </div>
+    
+    
  </body>
  <script src="../js/scriptIndex.js"></script>
  <script src="../js/scriptFav.js"></script>
