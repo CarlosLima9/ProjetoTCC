@@ -1,110 +1,125 @@
+let timer;
 let currentQuestion = 1;
-let timerInterval;
-let score = 0;
-const totalQuestions = 10;
+let secondsLeft = 600; 
 let started = false;
-document.querySelectorAll('.pagination button').forEach(button => {
-    button.disabled = true;
-});
+let quizCompleted = false;
+let answers = {};
+
 
 function startQuiz() {
+    if (started) return; 
+    disableQuestions(false);
+    showQuestion(currentQuestion);
+    timer = setInterval(updateTimer, 1000);
     started = true;
     document.querySelector('.submit-btn').disabled = true;
-    startTimer(10 * 60);
-    enableNavigation();
-    showQuestion(currentQuestion);
 }
 
-function startTimer(duration) {
-    let timer = duration, minutes, seconds;
-    timerInterval = setInterval(() => {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        document.querySelector('.timer').textContent = `${minutes}:${seconds}`;
-
-        if (--timer < 0) {
-            clearInterval(timerInterval);
-            document.querySelector('.timer').textContent = "Tempo esgotado!";
-            disableNavigation();
-            showScore();
-        }
-    }, 1000);
-}
-
-function enableNavigation() {
-    document.querySelectorAll('.pagination button').forEach(button => {
-        button.disabled = false;
-    });
-}
-
-function disableNavigation() {
-    document.querySelectorAll('.pagination button').forEach(button => {
-        button.disabled = true;
-    });
-}
-
-function showQuestion(questionNumber) {
-    document.querySelectorAll('.question').forEach((question) => {
-        question.classList.remove('active');
-    });
-    document.getElementById(`question${questionNumber}`).classList.add('active');
-    currentQuestion = questionNumber;
-    updateButtonHighlight();
-}
-
-function previousQuestion() {
-    if (currentQuestion > 1) {
-        checkAnswer();
-        currentQuestion--;
-        showQuestion(currentQuestion);
+function updateTimer() {
+    if (secondsLeft <= 0) {
+        clearInterval(timer);
+        finishQuiz();
+    } else {
+        secondsLeft--;
+        displayTime(secondsLeft);
     }
 }
 
-
-function nextQuestion() {
-    if (currentQuestion < totalQuestions) {
-        checkAnswer();
-        currentQuestion++;
-        showQuestion(currentQuestion);
-    }
-}
-
-
-function updateButtonHighlight() {
-    document.querySelectorAll('.pagination button').forEach((button) => {
-        button.classList.remove('active');
-    });
-    const activeButton = document.querySelector(`.pagination button:nth-child(${currentQuestion + 1})`);
-    if (activeButton) activeButton.classList.add('active');
-}
-
-function checkAnswer() {
-    const selectedOption = document.querySelector(`input[name="question${currentQuestion}"]:checked`);
-    if (selectedOption) {
-        if (selectedOption.id === "correta") {
-            score++; // Incrementa a variável score se a resposta for correta
-        }
-    }
+function displayTime(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let sec = seconds % 60;
+    document.querySelector('.timer').innerText = `${minutes}:${sec < 10 ? '0' : ''}${sec}`;
 }
 
 function finishQuiz() {
-    if(started === true){
-    checkAnswer(); 
-    clearInterval(timerInterval);
-    disableNavigation();
-    showScore();
+    if (quizCompleted) return; 
+    let correctAnswersCount = 0;
+    const totalQuestions = 10;
+    let allAnswered = true;
+
+    for (let i = 1; i <= totalQuestions; i++) {
+        const selectedOption = document.querySelector(`input[name="question${i}"]:checked`);
+        
+        if (!selectedOption) {
+            allAnswered = false; 
+            break; 
+        } else {
+            const correctAnswer = document.querySelector(`#question${i} .correct-answer`).value;
+            if (selectedOption.value === correctAnswer) {
+                correctAnswersCount++;
+            }
+        }
+    }
+
+    if (allAnswered) {
+        clearInterval(timer);
+        document.querySelector('.quiz-results').style.display = 'block';
+        document.querySelector('.quiz-results').innerHTML = `Você acertou ${correctAnswersCount} de ${totalQuestions} questões!`;
+        disableQuestions(true);
+        showQuestion();
+        quizCompleted = true;
+        document.querySelector('.submit-btn').disabled = true;
+        disablePagination(true); 
+    } else {
+        alert('Você precisa responder todas as questões antes de finalizar o quiz!');
     }
 }
 
 
-function showScore() {
-    document.querySelector('.quiz-results').textContent = `Você acertou ${score} de ${totalQuestions} perguntas!`;
-    document.querySelector('.quiz-results').style.display = 'block';
+function disablePagination(disabled) {
+    const paginationButtons = document.querySelectorAll('.pagination button');
+    paginationButtons.forEach(button => {
+        button.disabled = disabled;
+    });
 }
 
+// Função para desabilitar/permitir interação com as questões
+function disableQuestions(disabled) {
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        const inputs = question.querySelectorAll('input');
+        inputs.forEach(input => {
+            input.disabled = disabled;
+        });
+    });
+}
 
-showQuestion(currentQuestion);
+// Função para navegar entre as questões
+function showQuestion(questionNumber) {
+    const allQuestions = document.querySelectorAll('.question');
+    allQuestions.forEach((question, index) => {
+        if (index === questionNumber - 1) {
+            question.style.display = 'block';
+        } else {
+            question.style.display = 'none';
+        }
+    });
+}
+
+// Função para armazenar a resposta do quiz no localStorage
+function saveAnswer(questionNumber) {
+    const selectedOption = document.querySelector(`input[name="question${questionNumber}"]:checked`);
+    if (selectedOption) {
+        answers[`question${questionNumber}`] = selectedOption.value;
+        localStorage.setItem('quizAnswers', JSON.stringify(answers));
+    }
+}
+
+// Função para carregar as respostas do localStorage
+function loadAnswers() {
+    const storedAnswers = localStorage.getItem('quizAnswers');
+    if (storedAnswers) {
+        answers = JSON.parse(storedAnswers);
+        for (let questionNumber in answers) {
+            const answerValue = answers[questionNumber];
+            const input = document.querySelector(`input[name="${questionNumber}"][value="${answerValue}"]`);
+            if (input) {
+                input.checked = true;
+            }
+        }
+    }
+}
+
+// Carregar as respostas salvas ao recarregar a página
+window.onload = loadAnswers;

@@ -1,3 +1,4 @@
-document.getElementById("quiz").addEventListener('click', () => {
-    window.location.href = 'Quiz_Hist.html';
-})
+document.getElementById('quiz').addEventListener('click', function() {
+    localStorage.clear();
+    window.location.href = "quiz_Hist.html"; 
+});
