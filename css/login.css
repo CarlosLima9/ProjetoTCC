@@ -36,6 +36,14 @@ img{
     width: 100%;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.btnVoltar{
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 #acesso, #cadastro{
